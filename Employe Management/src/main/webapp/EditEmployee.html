@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit Employee</title>
+</head>
+<body>
+  <h1>Edit Employee</h1>
+  <form action="editEmployee" method="post">
+    <input type="hidden" id="employeeId" name="employeeId" value="123"> <!-- Replace 123 with the actual employee ID -->
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" value="John Doe" required><br><br> <!-- Replace "John Doe" with the actual employee name -->
+
+    <label for="designation">Designation:</label>
+    <input type="text" id="designation" name="designation" value="Manager" required><br><br> <!-- Replace "Manager" with the actual employee designation -->
+
+    <label for="salary">Salary:</label>
+    <input type="number" id="salary" name="salary" value="5000.00" step="0.01" required><br><br> <!-- Replace 5000.00 with the actual employee salary -->
+
+    <input type="submit" value="Save Changes">
+  </form>
+</body>
+</html>

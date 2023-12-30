@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <form action="OperationServlet" method="post">
+            <label for="num1">Enter First Number</label>
+            <input type="text" name="num1" class="form-control" required>
+            
+            <label for="num2">Enter Second Number </label>
+            <input type="text" name="num2" class="form-control" required>
+            <label for="operation">Select Operation</label>
+            <select name="operation" class="form-control">
+                <option value="addition">Addition (+)</option>
+                <option value="subtraction">Subtraction (-)</option>
+                <option value="multiplication">Multiplication (x)</option>
+                <option value="division">Division (/)</option>
+            </select>
+
+            <button type="submit" class="btn btn-primary mt-2">Calculate</button>
+           
+        </form>
+    </div>
+</body>
+</html>
